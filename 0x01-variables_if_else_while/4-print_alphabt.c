@@ -1,22 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Print alphabet w/o two letters
- *
- * Return: 0
- */
+  * main - Prints some letters of alphabet
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	char z = 'a';
+	char c;
 
-	while (z <= 'Z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		if (z != 'q' && z != 'e')
+		if (c != 'e' && c != 'q')
 		{
-			putchar(z);
+			putchar(c);
 		}
-		z++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
