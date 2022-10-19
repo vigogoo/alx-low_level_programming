@@ -1,19 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - print 0-9
- *
- * Return: 0
- */
+  * main - Prints the alphabet at reverse
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int n = '0';
+	char c;
 
-	while (n <= '9')
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		putchar(n);
-		n++;
+		putchar(c);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
